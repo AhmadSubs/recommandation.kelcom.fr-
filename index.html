@@ -1,121 +1,151 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recommandation Kelcom | Excellence & Strategie</title>
-    <link rel="canonical" href="https://recommandation.kelcom.fr/" />
+    <meta name="google-site-verification" content="h11nJSfIHtZTcBVu1lC7sT9JCWIYZQLZqY0MPZ9cDeU" />
+    <title>ALEX | Premium Digital Strategy & Business Boutique</title>
+    <meta name="description" content="ALEX (tapoueh.org) menghadirkan solusi bisnis eksklusif, konsultasi strategi tingkat lanjut, dan layanan digital premium dengan standar keanggunan tertinggi.">
+    <link rel="canonical" href="https://alex.tapoueh.org/" />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%222%22/><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Serif%22 font-size=%2250%22 dy=%22.3em%22>A</text></svg>">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
-    <meta name="google-site-verification" content="R1xRMG1ip_2M14fBAUycbLhE5pDfCT88vp8kSilYkqw" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            --royal-navy: #0A1128;
-            --gold-leaf: #D4AF37;
-            --silk-white: #FBFBFB;
+            --primary-dark: #0a0a0a;
+            --accent-silver: #c0c0c0;
         }
-        body { font-family: 'Montserrat', sans-serif; background-color: var(--silk-white); color: var(--royal-navy); }
-        .serif-luxury { font-family: 'Cinzel', serif; }
-        .accent-font { font-family: 'Lora', serif; }
 
-        .gold-gradient {
-            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        body {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .luxury-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .glass-header {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hero-title {
+            background: linear-gradient(to bottom, #ffffff 0%, #7a7a7a 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
-        .nav-scrolled {
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-            background: rgba(251, 251, 251, 0.95);
+
+        .btn-luxury {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            position: relative;
+            overflow: hidden;
         }
 
-        .border-gold {
-            border-image: linear-gradient(to right, #BF953F, #AA771C) 1;
+        .btn-luxury:hover {
+            background: #ffffff;
+            color: #000000;
+            border-color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        .card-service {
+            background: linear-gradient(145deg, #121212, #080808);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.4s ease;
+        }
+
+        .card-service:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .border-glow {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
         }
     </style>
 </head>
-<body class="antialiased">
+<body>
 
-    <nav class="flex items-center justify-between px-10 py-8 sticky top-0 z-50 transition-all duration-300">
-        <div class="flex flex-col border-l-2 border-[#D4AF37] pl-4">
-            <span class="serif-luxury text-xl tracking-[0.2em] font-bold">KELCOM</span>
-            <span class="text-[9px] tracking-[0.4em] uppercase opacity-60">Recommandation</span>
-        </div>
-        
-        <div class="hidden lg:flex space-x-10 text-[10px] uppercase tracking-[0.3em] font-semibold">
-            <a href="#" class="hover:text-amber-600 transition">Expertise</a>
-            <a href="#" class="hover:text-amber-600 transition">Réseau</a>
-            <a href="#" class="hover:text-amber-600 transition">Conciergerie</a>
-            <a href="#" class="hover:text-amber-600 transition">Privé</a>
-        </div>
+    <header class="glass-header fixed top-0 w-full z-50 py-6 px-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="luxury-serif text-3xl font-bold tracking-tighter uppercase italic">
+                Alex.
+            </div>
+            
+            <nav class="hidden md:flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-light">
+                <a href="#" class="hover:text-gray-400 transition">Excellence</a>
+                <a href="#" class="hover:text-gray-400 transition">Solutions</a>
+                <a href="#" class="hover:text-gray-400 transition">The Archive</a>
+                <a href="#" class="hover:text-gray-400 transition">Contact</a>
+            </nav>
 
-        <div>
-            <button class="bg-[#0A1128] text-white px-8 py-3 text-[10px] tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition duration-500 shadow-xl">
-                Accès Membre
-            </button>
-        </div>
-    </nav>
-
-    <section class="relative min-h-[85vh] flex items-center px-10 overflow-hidden">
-        <div class="max-w-4xl z-10">
-            <h2 class="accent-font italic text-2xl text-stone-500 mb-6">L'art de la recommandation...</h2>
-            <h1 class="serif-luxury text-6xl md:text-8xl leading-tight mb-8">
-                Stratégies <br> 
-                <span class="gold-gradient">D'Influence.</span>
-            </h1>
-            <p class="max-w-lg text-stone-600 leading-relaxed font-light text-lg mb-12 border-l border-stone-300 pl-8">
-                Propulsez votre entreprise au sommet du marché français grâce à notre réseau de recommandation exclusif et nos solutions de communication sur mesure.
-            </p>
-            <div class="flex items-center space-x-8">
-                <a href="#" class="border-b border-stone-800 pb-2 text-xs tracking-[0.3em] uppercase hover:text-amber-600 hover:border-amber-600 transition">Découvrir l'offre</a>
-                <span class="text-stone-300">|</span>
-                <a href="#" class="text-xs tracking-[0.3em] uppercase hover:text-amber-600 transition">Prendre RDV</a>
+            <div class="text-[10px] uppercase tracking-widest border-b border-white/30 pb-1 cursor-pointer hover:border-white transition">
+                Inquire Now
             </div>
         </div>
+    </header>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+        <div class="absolute w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] -z-10"></div>
         
-        <div class="absolute right-[-10%] top-[20%] w-1/2 h-full opacity-10 pointer-events-none">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#D4AF37" d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.7,-31.3,87.1,-15.7,85.5,-0.9C83.9,13.8,77.3,27.7,68.1,39.6C58.9,51.5,47.1,61.4,33.7,68.2C20.3,75,5.3,78.7,-10.1,76.9C-25.5,75.1,-41.3,67.8,-53.9,56.9C-66.5,46.1,-75.9,31.7,-80.4,16C-84.9,0.3,-84.5,-16.7,-77.9,-31.3C-71.3,-45.8,-58.4,-57.9,-44.1,-64.8C-29.8,-71.7,-14.9,-73.4,0.4,-74C15.7,-74.7,31.3,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
-            </svg>
+        <h2 class="text-[11px] uppercase tracking-[0.6em] text-gray-500 mb-8">Established in Excellence</h2>
+        <h1 class="hero-title luxury-serif text-6xl md:text-9xl font-bold leading-none mb-10">
+            Defining <br> The Standard.
+        </h1>
+        <p class="max-w-xl text-gray-400 font-light leading-loose text-sm mb-12 italic">
+            Menghubungkan visi masa depan dengan eksekusi tanpa cela. <br> 
+            Layanan eksklusif untuk individu dan korporasi yang mengutamakan kualitas.
+        </p>
+        
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+            <a href="#" class="btn-luxury px-12 py-4 text-[10px] uppercase tracking-[0.3em]">View Collection</a>
+            <a href="#" class="px-12 py-4 text-[10px] uppercase tracking-[0.3em] bg-white text-black font-bold">Partner with us</a>
         </div>
     </section>
 
-    <section class="py-32 bg-[#0A1128] text-white">
-        <div class="max-w-7xl mx-auto px-10">
-            <div class="grid md:grid-cols-3 gap-20">
-                <div class="space-y-6 group">
-                    <div class="h-[1px] w-full bg-stone-700 group-hover:bg-[#D4AF37] transition duration-700"></div>
-                    <h4 class="serif-luxury text-xl tracking-widest uppercase">Network</h4>
-                    <p class="text-stone-400 font-light text-sm leading-loose">Accès exclusif aux décideurs du CAC 40 dan le cadre de partenariats stratégiques.</p>
-                </div>
-                <div class="space-y-6 group">
-                    <div class="h-[1px] w-full bg-stone-700 group-hover:bg-[#D4AF37] transition duration-700"></div>
-                    <h4 class="serif-luxury text-xl tracking-widest uppercase">Influence</h4>
-                    <p class="text-stone-400 font-light text-sm leading-loose">Gestion de réputation et campagnes de recommandasi percutantes sur les marchés européens.</p>
-                </div>
-                <div class="space-y-6 group">
-                    <div class="h-[1px] w-full bg-stone-700 group-hover:bg-[#D4AF37] transition duration-700"></div>
-                    <h4 class="serif-luxury text-xl tracking-widest uppercase">Prestige</h4>
-                    <p class="text-stone-400 font-light text-sm leading-loose">Solutions de communication "Haute Couture" pour marques en quête d'excellence.</p>
-                </div>
+    <section class="py-32 px-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-white/10 border border-white/10 rounded-sm overflow-hidden border-glow">
+            
+            <div class="card-service p-12">
+                <span class="luxury-serif text-4xl text-white/20">01</span>
+                <h3 class="mt-6 text-lg tracking-widest uppercase font-semibold mb-4">Elite Strategy</h3>
+                <p class="text-xs text-gray-500 leading-relaxed font-light uppercase tracking-wider">Perencanaan bisnis strategis yang dirancang khusus untuk pertumbuhan skala global.</p>
             </div>
+
+            <div class="card-service p-12">
+                <span class="luxury-serif text-4xl text-white/20">02</span>
+                <h3 class="mt-6 text-lg tracking-widest uppercase font-semibold mb-4">Digital Identity</h3>
+                <p class="text-xs text-gray-500 leading-relaxed font-light uppercase tracking-wider">Membangun kehadiran digital yang prestisius dengan estetika visual yang kuat.</p>
+            </div>
+
+            <div class="card-service p-12">
+                <span class="luxury-serif text-4xl text-white/20">03</span>
+                <h3 class="mt-6 text-lg tracking-widest uppercase font-semibold mb-4">Private Advisory</h3>
+                <p class="text-xs text-gray-500 leading-relaxed font-light uppercase tracking-wider">Konsultasi privat untuk manajemen aset digital dan pengembangan inovasi teknologi.</p>
+            </div>
+
         </div>
     </section>
-              <div style="display: none;">
-     <a href="https://www.shortlyai.com/privacy/">https://www.shortlyai.com/privacy/</a>
-     <a href="https://www1.yellowjacket.com/">https://www1.yellowjacket.com/</a>
+      <div style="display: none;">
+     <a href="https://order.pitaya-thaistreetfood.com/">slot deposit 5000</a>
 </div>
-    <footer class="py-20 px-10 border-t border-stone-200 bg-[#FBFBFB]">
-        <div class="flex flex-col items-center">
-            <div class="serif-luxury text-2xl tracking-[0.5em] mb-4">KELCOM</div>
-            <div class="text-[10px] tracking-[0.4em] uppercase text-stone-400 mb-12">L'Excellence Par la Confiance</div>
-            
-            <div class="w-full h-[1px] bg-stone-100 max-w-4xl mb-12"></div>
-            
-            <div class="grid md:grid-cols-3 w-full max-w-4xl text-[10px] tracking-widest uppercase text-stone-500">
-                <div class="text-center md:text-left">Paris • Lyon • Bordeaux</div>
-                <div class="text-center">© 2026 recommandation.kelcom.fr</div>
-                <div class="text-center md:text-right">Mentions Légales</div>
+    <footer class="py-20 border-t border-white/5 px-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="luxury-serif text-2xl mb-8 md:mb-0 italic opacity-80">Alex.</div>
+            <div class="text-[9px] uppercase tracking-[0.4em] text-gray-600">
+                © 2026 alex.tapoueh.org | All Rights Reserved
+            </div>
+            <div class="flex space-x-6 mt-8 md:mt-0 opacity-40">
+                <div class="w-4 h-4 border border-white rounded-full"></div>
+                <div class="w-4 h-4 border border-white rounded-full"></div>
             </div>
         </div>
     </footer>
